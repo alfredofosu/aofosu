@@ -7,10 +7,16 @@ a {
     color: red;
 }
 
+img{
+    height: auto;
+    width: 500px;
+    border-style: 1px;
+}
+
 /* universal selector */
 * {
     color: black;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
     text-align: center;
 }
 
@@ -22,7 +28,7 @@ a {
 /* id selector */
 /* use ids in HTML when specificity is needed or having links redirect to a section on the current page */
 #title { /* use a hash # for IDs */
-    font-family: "Sofia", sans-serif;
+    font-family: 'Sofia', sans-serif;
 }
 
 /* grouping selector */
@@ -34,10 +40,12 @@ a {
 
 .read {
   /* several unique declarations */
+  color: transparent;
 }
 
 .unread {
   /* several unique declarations */
+  color: transparent;
 }
 
 /* chaining selector */
@@ -72,4 +80,5 @@ a {
 
 .ancestor .contents {
     /* some declarations */
+    color: transparent;
   }
