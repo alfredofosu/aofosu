@@ -1,0 +1,75 @@
+/* type selector */
+em {
+    color: rosybrown;
+}
+
+a {
+    color: red;
+}
+
+/* universal selector */
+* {
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* class selector */
+.alert-text{ /* use a period . for classes */
+    color:red;
+}
+
+/* id selector */
+/* use ids in HTML when specificity is needed or having links redirect to a section on the current page */
+#title { /* use a hash # for IDs */
+    font-family: "Sofia", sans-serif;
+}
+
+/* grouping selector */
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
+
+/* chaining selector */
+/* Example
+<div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection" id="preview">This is where a preview for a post might go.</p>
+</div>
+*/
+.subsection.header { /* notice there is no space btn selectors*/
+    color: red;
+  }
+
+  .subsection#preview {
+    color: blue;
+  }
+
+/* descendant combinator */ 
+/* there are four main types */
+/* Example 
+<div class="ancestor"> <!-- A -->
+  <div class="contents"> <!-- B -->
+    <div class="contents"> <!-- C -->
+    </div>
+  </div>
+</div>
+
+<div class="contents"></div> <!-- D -->
+*/
+
+/* styles.css */
+
+.ancestor .contents {
+    /* some declarations */
+  }
