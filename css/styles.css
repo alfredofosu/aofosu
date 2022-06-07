@@ -1,3 +1,16 @@
+/*
+Cascading Style Sheets
+The Cascade in an algorithm that defines how user agents or browsers co,bine property values (defined styles)
+originating from different sources; the algorithm defines the origin and layer that takes precedence when declarations
+in more than one origin or cascade layer set a value for a property on an element.
+
+Origin types: user-agent stylesheets, author stylesheets and user stylesheets
+
+
+
+*/
+
+
 /* type selector */
 em {
     color: rosybrown;
@@ -10,7 +23,7 @@ a {
 img{
     height: auto;
     width: 500px;
-    border-style: 1px;
+    border: 2px solid #555;
 }
 
 /* universal selector */
@@ -28,7 +41,7 @@ img{
 /* id selector */
 /* use ids in HTML when specificity is needed or having links redirect to a section on the current page */
 #title { /* use a hash # for IDs */
-    font-family: 'Sofia', sans-serif;
+    font-family: 'Sofia', sans-serif !important; /* do not use !important ONLY if needed! */
 }
 
 /* grouping selector */
@@ -64,7 +77,9 @@ img{
   }
 
 /* descendant combinator */ 
-/* there are four main types */
+/* there are four main types 
+
+*/
 /* Example 
 <div class="ancestor"> <!-- A -->
   <div class="contents"> <!-- B -->
